@@ -142,10 +142,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 border-b transition-all duration-300 ${
-        scrolled
-          ? "border-primary/25 bg-secondary shadow-lg"
-          : "border-primary/15 bg-secondary/95 backdrop-blur-md"
+      className={`fixed inset-x-0 top-0 z-40 border-b border-primary/30 bg-header text-header-foreground transition-all duration-300 ${
+        scrolled ? "shadow-lg" : ""
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
@@ -153,9 +151,10 @@ function Header() {
           <img
             src={logoAsset.url}
             alt="Signature Framing – residential & commercial framing"
-            className="h-12 w-auto md:h-16 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+            className="h-12 w-auto md:h-16"
           />
         </a>
+
 
 
         <nav className="hidden lg:flex items-center gap-1">
