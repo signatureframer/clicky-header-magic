@@ -162,7 +162,7 @@ function Header() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
+              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-header-foreground/80 transition-colors hover:bg-primary/20 hover:text-header-foreground"
             >
               {l.label}
             </a>
