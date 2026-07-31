@@ -142,10 +142,8 @@ function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
-        scrolled
-          ? "border-b border-border bg-background/90 backdrop-blur-md shadow-lg"
-          : "bg-gradient-to-b from-background/80 to-transparent"
+      className={`fixed inset-x-0 top-0 z-40 border-b border-primary/30 bg-header text-header-foreground transition-all duration-300 ${
+        scrolled ? "shadow-lg" : ""
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
@@ -153,9 +151,10 @@ function Header() {
           <img
             src={logoAsset.url}
             alt="Signature Framing – residential & commercial framing"
-            className="h-12 w-auto md:h-16 drop-shadow-[0_2px_6px_rgba(0,0,0,0.6)]"
+            className="h-12 w-auto md:h-16"
           />
         </a>
+
 
 
         <nav className="hidden lg:flex items-center gap-1">
@@ -163,7 +162,7 @@ function Header() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-foreground/80 transition-colors hover:bg-primary/10 hover:text-primary"
+              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-header-foreground/80 transition-colors hover:bg-primary/20 hover:text-header-foreground"
             >
               {l.label}
             </a>
@@ -183,7 +182,7 @@ function Header() {
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-md border border-border bg-background/60 text-foreground lg:hidden"
+            className="grid h-10 w-10 place-items-center rounded-md border border-header-foreground/20 bg-header text-header-foreground lg:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
@@ -191,14 +190,14 @@ function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-border bg-background/95 backdrop-blur-md lg:hidden">
+        <div className="border-t border-header-foreground/15 bg-header lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-foreground/85 transition-colors hover:bg-primary/10 hover:text-primary"
+                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-header-foreground/85 transition-colors hover:bg-primary/20 hover:text-header-foreground"
               >
                 {l.label}
               </a>
