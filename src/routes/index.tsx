@@ -172,7 +172,7 @@ function Header() {
         <div className="flex items-center gap-2">
           <a
             href={TEL}
-            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-bold tracking-wider text-primary-foreground transition-transform hover:scale-[1.03] hover:shadow-[var(--shadow-gold)]"
+            className="hidden sm:inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-bold tracking-wider text-primary transition-transform hover:scale-[1.03] hover:shadow-[var(--shadow-gold)]"
           >
             <Phone className="h-4 w-4" />
             {PHONE}
