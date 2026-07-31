@@ -142,10 +142,10 @@ function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 border-b transition-all duration-300 ${
         scrolled
-          ? "border-b border-border bg-background/90 backdrop-blur-md shadow-lg"
-          : "bg-gradient-to-b from-background/80 to-transparent"
+          ? "border-primary/25 bg-secondary shadow-lg"
+          : "border-primary/15 bg-secondary/95 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
