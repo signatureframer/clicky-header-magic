@@ -151,7 +151,7 @@ function Header() {
           <img
             src={logoAsset}
             alt="Signature Framing – residential & commercial framing"
-            className="h-12 w-auto md:h-16"
+            className="h-12 w-auto md:h-16 [filter:drop-shadow(0_0_1px_rgba(255,255,255,0.9))_drop-shadow(0_1px_2px_rgba(0,0,0,0.25))]"
           />
         </a>
 
