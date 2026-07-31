@@ -26,7 +26,7 @@ import g1 from "@/assets/g1.jpg";
 import g2 from "@/assets/g2.jpg";
 import g3 from "@/assets/g3.jpg";
 import g4 from "@/assets/g4.jpg";
-import logoAsset from "@/assets/signature-framing-logo.png.asset.json";
+import logoAsset from "@/assets/signature-framing-logo-v2.png.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
