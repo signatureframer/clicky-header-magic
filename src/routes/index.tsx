@@ -204,7 +204,7 @@ function Header() {
             ))}
             <a
               href={TEL}
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2.5 text-sm font-bold tracking-wider text-primary-foreground sm:hidden"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-background px-4 py-2.5 text-sm font-bold tracking-wider text-primary sm:hidden"
             >
               <Phone className="h-4 w-4" />
               {PHONE}
