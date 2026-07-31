@@ -83,13 +83,15 @@ function SectionHeader({
   eyebrow,
   title,
   callLabel,
+  showCall = false,
   description,
   align = "left",
   darkBg = false,
 }: {
   eyebrow: string;
   title: string;
-  callLabel: string;
+  callLabel?: string;
+  showCall?: boolean;
   description?: string;
   align?: "left" | "center";
   darkBg?: boolean;
@@ -98,7 +100,7 @@ function SectionHeader({
     align === "center" ? "items-center text-center" : "items-start text-left";
   return (
     <div className={`flex flex-col ${alignCls} gap-6`}>
-      <CallHeaderButton label={callLabel} />
+      {showCall ? <CallHeaderButton label={callLabel} /> : null}
       <div className={`flex flex-col ${alignCls} gap-3 max-w-3xl`}>
         <span className="eyebrow">{eyebrow}</span>
         <h2 className="text-4xl md:text-5xl font-bold leading-[1.05]">
@@ -628,15 +630,6 @@ function Faq() {
             callLabel="Ask us directly"
             description="Don't see your question? Call us directly and we'll answer it on the spot."
           />
-          <div className="mt-8">
-            <a
-              href={TEL}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-semibold tracking-wider text-primary-foreground transition-transform hover:scale-[1.02] hover:shadow-[var(--shadow-gold)]"
-            >
-              <Phone className="h-4 w-4" />
-              {PHONE}
-            </a>
-          </div>
         </div>
 
         <div className="space-y-3">
@@ -681,6 +674,7 @@ function Contact() {
             eyebrow="Get in Touch"
             title="Get a Free Quote"
             callLabel="Prefer to call?"
+            showCall
             description="We stay in constant communication with our customers until the job is done. Drop us a line — we'll get back the same day."
           />
 
