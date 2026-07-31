@@ -182,7 +182,7 @@ function Header() {
             aria-label="Open menu"
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="grid h-10 w-10 place-items-center rounded-md border border-border bg-background/60 text-foreground lg:hidden"
+            className="grid h-10 w-10 place-items-center rounded-md border border-header-foreground/20 bg-header text-header-foreground lg:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
