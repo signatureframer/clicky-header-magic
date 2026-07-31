@@ -83,13 +83,15 @@ function SectionHeader({
   eyebrow,
   title,
   callLabel,
+  showCall = false,
   description,
   align = "left",
   darkBg = false,
 }: {
   eyebrow: string;
   title: string;
-  callLabel: string;
+  callLabel?: string;
+  showCall?: boolean;
   description?: string;
   align?: "left" | "center";
   darkBg?: boolean;
@@ -98,7 +100,7 @@ function SectionHeader({
     align === "center" ? "items-center text-center" : "items-start text-left";
   return (
     <div className={`flex flex-col ${alignCls} gap-6`}>
-      <CallHeaderButton label={callLabel} />
+      {showCall ? <CallHeaderButton label={callLabel} /> : null}
       <div className={`flex flex-col ${alignCls} gap-3 max-w-3xl`}>
         <span className="eyebrow">{eyebrow}</span>
         <h2 className="text-4xl md:text-5xl font-bold leading-[1.05]">
