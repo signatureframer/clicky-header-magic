@@ -190,14 +190,14 @@ function Header() {
       </div>
 
       {open ? (
-        <div className="border-t border-border bg-background/95 backdrop-blur-md lg:hidden">
+        <div className="border-t border-header-foreground/15 bg-header lg:hidden">
           <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-foreground/85 transition-colors hover:bg-primary/10 hover:text-primary"
+                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-header-foreground/85 transition-colors hover:bg-primary/20 hover:text-header-foreground"
               >
                 {l.label}
               </a>
