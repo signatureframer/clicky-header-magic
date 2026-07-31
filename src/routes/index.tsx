@@ -149,21 +149,14 @@ function Header() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
-        <a href="#top" className="flex items-center gap-3">
+        <a href="#top" className="flex items-center">
           <img
             src={logoAsset.url}
-            alt="Signature Framing logo"
-            className="h-10 w-auto brightness-0 invert md:h-12"
+            alt="Signature Framing – residential & commercial framing"
+            className="h-11 w-auto brightness-0 invert md:h-14"
           />
-          <span className="hidden sm:flex flex-col leading-none border-l border-border pl-3">
-            <span className="font-display text-lg font-bold tracking-wider">
-              SIGNATURE
-            </span>
-            <span className="text-[10px] font-semibold uppercase tracking-[0.32em] text-primary">
-              Framing
-            </span>
-          </span>
         </a>
+
 
         <nav className="hidden lg:flex items-center gap-1">
           {NAV_LINKS.map((l) => (
