@@ -142,7 +142,7 @@ function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-40 border-b border-primary/30 bg-header text-header-foreground transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-40 border-b border-header-foreground/15 bg-header text-header-foreground transition-all duration-300 ${
         scrolled ? "shadow-lg" : ""
       }`}
     >
@@ -162,7 +162,7 @@ function Header() {
             <a
               key={l.href}
               href={l.href}
-              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-header-foreground/80 transition-colors hover:bg-primary/20 hover:text-header-foreground"
+              className="rounded-full px-3 py-2 text-sm font-semibold uppercase tracking-wider text-header-foreground/80 transition-colors hover:bg-header-foreground/10 hover:text-header-foreground"
             >
               {l.label}
             </a>
@@ -197,7 +197,7 @@ function Header() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-header-foreground/85 transition-colors hover:bg-primary/20 hover:text-header-foreground"
+                className="rounded-md px-3 py-2.5 text-sm font-semibold uppercase tracking-wider text-header-foreground/85 transition-colors hover:bg-header-foreground/10 hover:text-header-foreground"
               >
                 {l.label}
               </a>
