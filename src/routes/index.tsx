@@ -26,7 +26,7 @@ import g1 from "@/assets/g1.jpg";
 import g2 from "@/assets/g2.jpg";
 import g3 from "@/assets/g3.jpg";
 import g4 from "@/assets/g4.jpg";
-import logoAsset from "@/assets/signature-framing-logo-v2.png.asset.json";
+import logoAsset from "@/assets/signature-framing-logo-clear.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -149,7 +149,7 @@ function Header() {
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 md:px-8">
         <a href="#top" className="flex items-center">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="Signature Framing – residential & commercial framing"
             className="h-12 w-auto md:h-16"
           />
