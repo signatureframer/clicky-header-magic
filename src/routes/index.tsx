@@ -238,7 +238,16 @@ function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 pt-32 pb-20 md:px-8">
         <div className="max-w-2xl">
+          <img
+            src={logoAsset}
+            alt="Signature Framing logo"
+            width={2804}
+            height={1408}
+            decoding="async"
+            className="h-20 w-auto md:h-28 [filter:drop-shadow(0_2px_6px_rgba(0,0,0,0.55))]"
+          />
           <h1 className="mt-4 font-display text-5xl font-bold leading-[0.95] md:text-7xl">
+
             Build Strong with{" "}
             <span className="text-primary">Expert Framers</span>
           </h1>
