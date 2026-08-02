@@ -234,9 +234,7 @@ function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 pt-32 pb-20 md:px-8">
         <div className="max-w-2xl">
-          <div className="mb-8">
-            <CallHeaderButton label="Talk to a framer now" />
-          </div>
+          
           <span className="eyebrow">Hudson Valley Wood Framing</span>
           <h1 className="mt-4 font-display text-5xl font-bold leading-[0.95] md:text-7xl">
             Build Strong with{" "}
