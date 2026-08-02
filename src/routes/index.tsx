@@ -26,7 +26,7 @@ import g1 from "@/assets/g1.jpg";
 import g2 from "@/assets/g2.jpg";
 import g3 from "@/assets/g3.jpg";
 import g4 from "@/assets/g4.jpg";
-import logoAsset from "@/assets/signature-framing-logo-sharp.png";
+import logoAsset from "@/assets/signature-framing-logo-crisp.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -153,10 +153,10 @@ function Header() {
           <img
             src={logoAsset}
             alt="Signature Framing – residential & commercial framing"
-            width={2804}
-            height={1408}
+            width={1376}
+            height={768}
             decoding="async"
-            className="h-12 w-auto md:h-16 [image-rendering:auto] [filter:drop-shadow(0_1px_1px_rgba(0,0,0,0.28))]"
+            className="h-16 w-auto contrast-125 md:h-20 [image-rendering:auto] drop-shadow-sm"
           />
 
         </a>
@@ -241,10 +241,10 @@ function Hero() {
           <img
             src={logoAsset}
             alt="Signature Framing logo"
-            width={2804}
-            height={1408}
+            width={1376}
+            height={768}
             decoding="async"
-            className="h-20 w-auto md:h-28 [filter:drop-shadow(0_2px_6px_rgba(0,0,0,0.55))]"
+            className="h-24 w-auto contrast-125 md:h-32 [image-rendering:auto] drop-shadow-lg"
           />
           <h1 className="mt-4 font-display text-5xl font-bold leading-[0.95] md:text-7xl">
 
@@ -682,10 +682,10 @@ function Contact() {
           <img
             src={logoAsset}
             alt="Signature Framing logo"
-            width={2804}
-            height={1408}
+            width={1376}
+            height={768}
             decoding="async"
-            className="mb-6 h-16 w-auto md:h-20 [filter:drop-shadow(0_2px_5px_rgba(0,0,0,0.5))]"
+            className="mb-6 h-20 w-auto contrast-125 md:h-24 [image-rendering:auto] drop-shadow-lg"
           />
           <SectionHeader
 
