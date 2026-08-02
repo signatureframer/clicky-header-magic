@@ -26,7 +26,7 @@ import g1 from "@/assets/g1.jpg";
 import g2 from "@/assets/g2.jpg";
 import g3 from "@/assets/g3.jpg";
 import g4 from "@/assets/g4.jpg";
-import logoAsset from "@/assets/signature-framing-logo-clear.png";
+import logoAsset from "@/assets/signature-framing-logo-sharp.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -153,8 +153,12 @@ function Header() {
           <img
             src={logoAsset}
             alt="Signature Framing – residential & commercial framing"
-            className="h-12 w-auto md:h-16 [filter:drop-shadow(0_0_1px_rgba(255,255,255,0.9))_drop-shadow(0_1px_2px_rgba(0,0,0,0.25))]"
+            width={2804}
+            height={1408}
+            decoding="async"
+            className="h-12 w-auto md:h-16 [image-rendering:auto] [filter:drop-shadow(0_1px_1px_rgba(0,0,0,0.28))]"
           />
+
         </a>
 
 
@@ -234,7 +238,16 @@ function Hero() {
 
       <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 pt-32 pb-20 md:px-8">
         <div className="max-w-2xl">
+          <img
+            src={logoAsset}
+            alt="Signature Framing logo"
+            width={2804}
+            height={1408}
+            decoding="async"
+            className="h-20 w-auto md:h-28 [filter:drop-shadow(0_2px_6px_rgba(0,0,0,0.55))]"
+          />
           <h1 className="mt-4 font-display text-5xl font-bold leading-[0.95] md:text-7xl">
+
             Build Strong with{" "}
             <span className="text-primary">Expert Framers</span>
           </h1>
@@ -666,7 +679,16 @@ function Contact() {
     <section id="contact" className="bg-background py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:px-8 lg:gap-20">
         <div>
+          <img
+            src={logoAsset}
+            alt="Signature Framing logo"
+            width={2804}
+            height={1408}
+            decoding="async"
+            className="mb-6 h-16 w-auto md:h-20 [filter:drop-shadow(0_2px_5px_rgba(0,0,0,0.5))]"
+          />
           <SectionHeader
+
             eyebrow="Get in Touch"
             title="Get a Free Quote"
             callLabel="Prefer to call?"
