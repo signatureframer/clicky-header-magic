@@ -679,7 +679,16 @@ function Contact() {
     <section id="contact" className="bg-background py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-12 px-4 md:grid-cols-2 md:px-8 lg:gap-20">
         <div>
+          <img
+            src={logoAsset}
+            alt="Signature Framing logo"
+            width={2804}
+            height={1408}
+            decoding="async"
+            className="mb-6 h-16 w-auto md:h-20 [filter:drop-shadow(0_2px_5px_rgba(0,0,0,0.5))]"
+          />
           <SectionHeader
+
             eyebrow="Get in Touch"
             title="Get a Free Quote"
             callLabel="Prefer to call?"
